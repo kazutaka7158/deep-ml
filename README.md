@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**10** solved · 7 problems · 0 labs · 3 math
+**11** solved · 8 problems · 0 labs · 3 math
 
 ![Coverage](./coverage.svg)
 
@@ -19,6 +19,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Gaussian Elimination for Solving Linear Systems](https://www.deep-ml.com/problems/58) | medium | 2026-10-27 | [solution](problems/0058-gaussian-elimination-for-solving-linear-systems) |
 | [LU Decomposition of a Square Matrix](https://www.deep-ml.com/problems/333) | medium | 2026-10-27 | [solution](problems/0333-lu-decomposition-of-a-square-matrix) |
 | [Matrix times Matrix ](https://www.deep-ml.com/problems/9) | medium | 2026-10-24 | [solution](problems/0009-matrix-times-matrix) |
+| [QR Decomposition](https://www.deep-ml.com/problems/201) | hard | 2026-10-28 | [solution](problems/0201-qr-decomposition) |
 
 ## Math
 
