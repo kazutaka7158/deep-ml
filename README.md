@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**24** solved · 16 problems · 0 labs · 8 math
+**25** solved · 16 problems · 0 labs · 9 math
 
 ![Coverage](./coverage.svg)
 
@@ -35,6 +35,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | --- | --- | --- | --- |
 | [Derivatives and Gradients](https://www.deep-ml.com/math-problems/1) | easy | 2026-10-29 | [solution](math/0001-derivatives-and-gradients) |
 | [Gradient Descent Updates](https://www.deep-ml.com/math-problems/5) | easy | 2026-10-30 | [solution](math/0005-gradient-descent-updates) |
+| [Why Minibatches: Gradient Variance vs Batch Size](https://www.deep-ml.com/math-problems/130) | easy | 2026-10-30 | [solution](math/0130-why-minibatches-gradient-variance-vs-batch-size) |
 | [Inverse and Rank](https://www.deep-ml.com/math-problems/12) | medium | 2026-10-24 | [solution](math/0012-inverse-and-rank) |
 | [Least Squares and the Normal Equations](https://www.deep-ml.com/math-problems/34) | medium | 2026-10-29 | [solution](math/0034-least-squares-and-the-normal-equations) |
 | [Multivariate Calculus](https://www.deep-ml.com/math-problems/2) | medium | 2026-10-29 | [solution](math/0002-multivariate-calculus) |
