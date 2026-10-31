@@ -22,29 +22,18 @@ def gradient_descent(X, y, weights, learning_rate, n_epochs, batch_size=1, metho
 
     m, n = X.shape
 
-    for i in range(n_epochs):
-        preds = X @ weights
+    if method == "batch":
+        step = m
+    if method == "stochastic":
+        step = 1
+    if method == "mini_batch":
+        step = batch_size
 
-        loss = np.linalg.norm(preds - y)
-        loss = loss / m
-        if method == "batch":
-            gradients = X.T @ (preds - y)
-            gradients = gradients * (2 / m)
-            weights = weights - learning_rate * gradients
+    for _ in range(n_epochs):
+        for start in range(0, m, step):
+            X_b = X[start:start + step]
+            y_b = y[start:start + step]
+            grad = (2 / len(y_b)) * X_b.T @ (X_b @ weights - y_b)
 
-        if method == "stochastic":
-            for k in range(m):
-                single_grad = 2 * (X[k] @ weights - y[k]) * X[k].T
-                weights = weights - learning_rate * single_grad
-
-        if method == "mini_batch":
-            num_batchs = m // batch_size
-            if num_batchs * batch_size < m:
-                num_batchs += 1
-            for k in range(num_batchs):
-                batch_grad = X[k * batch_size : (k + 1) * batch_size, :] @ weights
-                batch_grad = batch_grad - y[k * batch_size : ((k + 1) * batch_size)]
-                batch_grad = X[k * batch_size : (k + 1) * batch_size, :].T @ batch_grad
-
-                weights = weights - learning_rate * (2/batch_size) * batch_grad
+            weights = weights - learning_rate * grad
     return weights
